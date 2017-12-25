@@ -9,7 +9,7 @@ trigger:
     from: 'on'
     to: 'off'
 action:
-  - service: shell_command.clouldutil
+  - service: shell_command.clouldutil # change if you devated from the read me
   - delay:
         seconds: 10
-  - service: homeassistant.restart
+  - service: homeassistant.restart # change if you devated from the read me
