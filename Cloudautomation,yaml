@@ -1,0 +1,15 @@
+alias: 'Internet Check'
+trigger:
+  - platform: state
+    entity_id: binary_sensor.ping_binary_sensor # Replace this with the sensor that you monitor connections with
+    from: 'off'
+    to: 'on'
+  - platform: state
+    entity_id: binary_sensor.ping_binary_sensor # Replace this with the sensor that you monitor connections with
+    from: 'on'
+    to: 'off'
+action:
+  - service: shell_command.clouldutil
+  - delay:
+        seconds: 10
+  - service: homeassistant.restart
