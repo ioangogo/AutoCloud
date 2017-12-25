@@ -9,5 +9,5 @@ Next in the main configuation add a shell_command
 
 ```yaml
 shell_command:
-clouldutil: "sh /home/homeassistant/.homeassistant/utils/cloud.sh"
+clouldutil: "sh /home/homeassistant/.homeassistant/utils/cloud.sh" # replace with the path of the script you downloaded
 ```
